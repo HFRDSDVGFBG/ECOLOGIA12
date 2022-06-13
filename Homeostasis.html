@@ -1,0 +1,38 @@
+<html>
+<title>Ecologia</title>
+<head>
+<script type="text/javascript">
+function muestraOculta(id) {
+  var elemento = document.getElementById('contenidos_'+id);
+  var enlace = document.getElementById('enlace_'+id);
+
+  if(elemento.style.display == "" || elemento.style.display == "block") {
+    elemento.style.display = "none";
+    enlace.innerHTML = 'Mostrar contenidos';
+  }
+  else {
+    elemento.style.display = "block";
+    enlace.innerHTML = 'Ocultar contenidos';
+  }
+}
+</script>
+</head>
+<body>
+<body bgcolor="#FFE4C4"> 
+  <font color="000000">
+</p><p><center><MARQUEE>ECOLOGIA Y HOMEOSTASIS</MARQUEE>
+  <P id="contenidos_1">[1]Un elemento fundamental de la ecologia es la homeostasis que consiste en que todas las especies que habitan en un entorno natural equilibrio tienden
+  a autorregularse y permanecer mas o menos contante en numero de habitantes, de este modo el medio ambiente se asegura una distribucion equitativa de los recursos 
+  y nunca se sufre carencia de estos.En un entorno que ha sido modificadopor la mano del hombre la homeostasis es mas dificil de encontar, y por esta razon se producen
+  los desequilibrios naturales</p>
+  <a id="enlace_1" href="#" onclick="muestraOculta('1'); return false;">Ocultar contenidos</a><br>
+
+ <P id="contenidos_2">[2]Actualmente se considera que la ecologia es una rama de las ciencias biologicas, y es la encargada de estudiar las interaciones entre los organismos vivos y el 
+ entorno natual en el que habitan.Es una ciencia multidiciplinaria que para desarrollarse como tal necesecita de otras ciencias para comprender la totalidad
+ del estudio del medio amabiente.Entre estas otras ciencias se encuentra la climatologia, la biologia, la etica y la ingenieria quimica.</p>
+ <a id="enlace_2" href="#" onclick="muestraOculta('2'); return false;">Ocultar contenidos</a>
+  <center><img src="HOMEO.JPEG" width="35%"><br></center>
+<a href="Ramas.html" target="">Ramas<br>
+<a href="Ciencia.html" target="">Ciencia
+</body>
+</html> 

@@ -1,0 +1,101 @@
+<html>
+<title>Dia</title>
+<body>
+<body>
+  <script language="JavaScript1.2">
+  message="DIA MUNDIAL DE LA ECOLOGIA"
+  ns6switch=1
+  var ns6=document.getElementById&&!document.all
+  mes=new Array();
+  mes[0]=-1;
+  mes[1]=-4;
+  mes[2]=-7;mes[3]=-10;
+  mes[4]=-7;
+  mes[5]=-4;
+  mes[6]=-1;
+  num=0;
+  num2=0;
+  txt="";
+  function jump0(){
+  if (ns6&&!ns6switch){
+  jump.innerHTML=message
+  return
+  }
+  if(message.length > 6){
+  for(i=0; i != message.length;i++){
+  txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+  jump.innerHTML=txt;
+  txt="";
+  jump1a()
+  }
+  else{
+  alert("Your message is to short")
+  }
+  }
+  function jump1a(){
+  nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+  nfinal.style.left=-num2;
+  if(num2 != 9){
+  num2=num2+3;
+  setTimeout("jump1a()",50)
+  }
+  else{
+  jump1b()
+  }
+  }
+  function jump1b(){
+  nfinal.style.left=-num2;
+  if(num2 != 0){num2=num2-3;
+  setTimeout("jump1b()",50)
+  }
+  else{
+  jump2()
+  }
+  }
+  function jump2(){
+  txt="";
+  for(i=0;i != message.length;i++){
+  if(i+num > -1 && i+num < 7){
+  txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+  }
+  else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+  }
+  jump.innerHTML=txt;
+  txt="";
+  if(num != (-message.length)){
+  num--;
+  setTimeout("jump2()",50)}
+  else{num=0;
+  setTimeout("jump0()",50)}}
+  </script>
+  </head>
+ <BODY BGCOLOR="#E0FFFF">
+  <body>
+  
+  <h2><div id="jumpx" style="color:green"></div></h2>
+  <script>
+  if (document.all||document.getElementById){
+  jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+  jump0()
+  }
+  else
+  document.write(message)
+  </script>
+<P>En el primer día de noviembre celebramos el Día Mundial de la Ecología que propicia recordarnos el deber de todo ser humano de aligerar su huella ecológica 
+  para vivir en armonía con el medio ambiente que le rodea</P>
+<P>El término ecología lo acuñó en 1869 el biólogo alemán Ernst Haeckel (1834-1919), quien la definió como "el estudio de la interdependencia y la interacción 
+  entre los organismos vivos -animales y plantas- y su ambiente -seres inorgánicos-", explica Luvia Milián Reyes en su Historia de la Ecología, tesis para obtener
+  la maestría en Investigación por la Universidad de San Carlos de Guatemala.</P>
+<P>Con el paso del tiempo, el concepto de ecología se ha extendido más allá de los seres vivos, pues su campo de estudio incluye la relación, la interacción y el 
+  "diálogo" que todos los seres (vivos o no) guardan entre sí y con todo lo que existe.</P>
+<P>Milián agrega que si bien la palabra naturaleza abarca el conjunto de todos los seres, desde las partículas elementales y las energías primordiales hasta las 
+  formas más complejas de vida, que constituyen un tejido de conexiones en todas las direcciones, la ecología va más allá y abarca no sólo la ecología natural, 
+  sino también la cultura y la sociedad para convertirse en ecología humana y social.</P>
+<P>Señala que la ecología analiza cómo cada elemento de un ecosistema afecta los demás componentes y cómo es afectado, además que el término ecología cobra importancia
+  para todos los seres humanos que comienzan a percatarse de que algunas malas prácticas ecológicas de la humanidad en el pasado y en la actualidad, conducen al 
+  deterioro de nuestra casa, que es la naturaleza, nuestro hábitat.</P>
+<P>Ahora, señala que, nos percatamos de que toda la vida en el planeta y nuestra propia vida dependen del equilibrio de todos los seres vivos con su medio ambiente, 
+  es decir, una visión ecológica de la naturaleza nos explica que “todo se relaciona con todo y en todos los puntos”.</P>
+  <center><img src="12.JPEG" width="35%"><br></center>
+</body>
+</html>
